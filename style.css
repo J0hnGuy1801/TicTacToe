@@ -1,0 +1,56 @@
+/* Hintergrundfarbe der gesamten Seite */
+body {
+    background-color: #323232;
+    font-family: 'Open Sans', sans-serif;
+    color: white; /* Weißer Text auf dunklem Hintergrund */
+    margin: 0;
+    padding: 0;
+  }
+  
+  #content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+  }
+
+  h1 {
+    display: flex;
+    justify-content: center;
+  }
+  /* Tabelle */
+  table {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border-collapse: collapse; /* Verhindert doppelte Ränder zwischen den Zellen */
+  }
+  
+  /* Zellen innerhalb der Tabelle */
+  td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 36px;
+    cursor: pointer;
+    border-top: 5px solid white; /* Weiße Trennlinie oben */
+    border-left: 5px solid white; /* Weiße Trennlinie links */
+  }
+  
+  td:first-child {
+    border-left: none; /* Entfernt die linke Trennlinie in der ersten Spalte */
+  }
+  
+  tr:first-child td {
+    border-top: none; /* Entfernt die obere Trennlinie in der ersten Reihe */
+  }
+  
+  td:hover {
+    background-color: #7e7e7e; /* Helles Grau bei Hover */
+  }
+  
+  /* Optional: Für den Fall, dass wir die Schriftgröße weiter anpassen möchten */
+  table, td {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
